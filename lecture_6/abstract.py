@@ -12,12 +12,9 @@ class Transport(ABC):
     def drive(self):
         pass
 
-# transport = Transport("Some transport") Type Error
-
 class Car(Transport):
-    # implement all abstract method to make class exact
-    # def start_engine(self):
-    #     print("I started engine")
+    def start_engine(self):
+        print("I started engine")
 
     def drive(self):
         print("Wroom Wroom")
