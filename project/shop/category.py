@@ -16,3 +16,8 @@ class Category:
 
     def set_id(self, category_id):
         self._id = category_id
+
+    def __str__(self):
+        return f'{self._id} - {self._name}'
+
+
